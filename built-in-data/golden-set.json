@@ -4,7 +4,7 @@
     "q": "I evacuated, can I refill my insulin early",
     "role": "member",
     "outcome": "answer",
-    "unit": "KU-SH-141",
+    "unit": "KU-SH-142",
     "doc": "DOC-EB14",
     "sec": "S1",
     "exact": {
@@ -18,7 +18,7 @@
     "q": "early refill, member evacuated",
     "role": "pharmacy",
     "outcome": "answer",
-    "unit": "KU-RX-142",
+    "unit": "KU-RX-143",
     "doc": "DOC-EB14",
     "sec": "S2",
     "required": [
@@ -35,7 +35,7 @@
     "q": "early refill hurricane",
     "role": "insurance",
     "outcome": "answer",
-    "unit": "KU-IN-143",
+    "unit": "KU-IN-144",
     "doc": "DOC-EB14",
     "sec": "S3",
     "required": [
@@ -44,7 +44,7 @@
     "forbidden": [
       "EM-14"
     ],
-    "notUnit": "KU-RX-142",
+    "notUnit": "KU-RX-143",
     "note": "same question, Insurance's own answer"
   },
   {
@@ -75,7 +75,7 @@
     "q": "lost my medication in the flood",
     "role": "member",
     "outcome": "answer",
-    "unit": "KU-SH-144",
+    "unit": "KU-SH-145",
     "doc": "DOC-EB14",
     "sec": "S4",
     "required": [
@@ -88,7 +88,7 @@
     "q": "which counties are declared",
     "role": "insurance",
     "outcome": "answer",
-    "unit": "KU-SH-145",
+    "unit": "KU-SH-141",
     "doc": "DOC-EB14",
     "sec": "S5",
     "required": [

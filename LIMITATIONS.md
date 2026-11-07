@@ -7,7 +7,8 @@ This is a prototype. Everything below is deliberate scope, disclosed rather than
 - All state lives in one browser tab and is lost on reload. There is no backend, no persistence and no exportable audit log.
 - Fingerprints use a short non-cryptographic hash. They show how approval binds to a revision; they are not tamper-proof.
 
-## "AI" behaviour is deterministic rules
+## "AI" behaviour is mostly deterministic rules
+- A model (Claude, hosted claude.ai version only) reads free-text questions on *Try it live*. Everything else below, including extraction, conflict detection, the support check, scoping and serving, is rules. Outside claude.ai the model is off. See the README for the eval numbers and their caveats.
 - Extraction splits by headings (or short heading-like lines, or paragraphs). It does not understand content.
 - Conflict detection simulates AI classification: answer topics come from a keyword rule ("early refill", "refill too soon") or the unit's title, and a conflict is a published unit in the same topic for an audience that could see both. Near-duplicates are word overlap (Dice coefficient, threshold 0.45), a similarity measure only.
 - The source-support check is narrow: Legal verbatim must match the excerpt exactly; guidance must not contain numbers that the source lacks. It would not catch a changed meaning without a number, such as "free shipping" becoming "paid shipping". A real system needs a model-based or human support check here.
@@ -36,4 +37,3 @@ This is a prototype. Everything below is deliberate scope, disclosed rather than
 - Word (.docx) reading loads mammoth 1.6.0 from cdnjs, so it needs a network connection. PDF is not supported.
 - Unit IDs are stable for the two samples (bulletin KU-…-141 to 145, Rx script KU-…-101 to 105); other documents are numbered by upload order.
 - All names, documents, wordings, figures and benefit claims are made up and illustrative. Hurricane Delia, the six counties, code EM-14 and every date are fictional. Lifting refill limits in a declared disaster mirrors a real Medicare Part D practice, but nothing here describes any plan's actual policy.
-- `window.__KL` is a test hook used by `tests/acceptance.mjs`; it is not part of the product.
