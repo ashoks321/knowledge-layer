@@ -1,0 +1,126 @@
+[
+  {
+    "id": "G1",
+    "q": "I evacuated, can I refill my insulin early",
+    "role": "member",
+    "outcome": "answer",
+    "unit": "KU-SH-141",
+    "doc": "DOC-EB14",
+    "sec": "S1",
+    "exact": {
+      "1": "If you live in a county affected by Hurricane Delia, you can refill your prescriptions early, including insulin, until October 31, 2026. Use any network pharmacy, or call the number on your member ID card.",
+      "2": "If you live in a county affected by Hurricane Delia, you can refill your prescriptions early, including insulin, until November 15, 2026. Use any network pharmacy, or call the number on your member ID card."
+    },
+    "note": "member chat, Legal wording"
+  },
+  {
+    "id": "G2",
+    "q": "early refill, member evacuated",
+    "role": "pharmacy",
+    "outcome": "answer",
+    "unit": "KU-RX-142",
+    "doc": "DOC-EB14",
+    "sec": "S2",
+    "required": [
+      "EM-14",
+      "30-day supply"
+    ],
+    "forbidden": [
+      "90-day"
+    ],
+    "note": "advocate procedure"
+  },
+  {
+    "id": "G3",
+    "q": "early refill hurricane",
+    "role": "insurance",
+    "outcome": "answer",
+    "unit": "KU-IN-143",
+    "doc": "DOC-EB14",
+    "sec": "S3",
+    "required": [
+      "send the call to the pharmacy team"
+    ],
+    "forbidden": [
+      "EM-14"
+    ],
+    "notUnit": "KU-RX-142",
+    "note": "same question, Insurance's own answer"
+  },
+  {
+    "id": "G4",
+    "q": "can I refill early",
+    "role": "member",
+    "outcome": "clarify",
+    "note": "asks which situation"
+  },
+  {
+    "id": "G5",
+    "q": "early refill, member not in a declared county",
+    "role": "pharmacy",
+    "outcome": "answer",
+    "unit": "KU-RX-031",
+    "doc": "DOC-PHDESK",
+    "sec": "S1",
+    "required": [
+      "75%"
+    ],
+    "forbidden": [
+      "EM-14"
+    ],
+    "note": "standing rule outside the area"
+  },
+  {
+    "id": "G6",
+    "q": "lost my medication in the flood",
+    "role": "member",
+    "outcome": "answer",
+    "unit": "KU-SH-144",
+    "doc": "DOC-EB14",
+    "sec": "S4",
+    "required": [
+      "No proof of loss"
+    ],
+    "note": "one unit, every channel"
+  },
+  {
+    "id": "G7",
+    "q": "which counties are declared",
+    "role": "insurance",
+    "outcome": "answer",
+    "unit": "KU-SH-145",
+    "doc": "DOC-EB14",
+    "sec": "S5",
+    "required": [
+      "Bayshore"
+    ],
+    "note": "shared unit"
+  },
+  {
+    "id": "G8",
+    "q": "EM-14 override code",
+    "role": "insurance",
+    "outcome": "scope",
+    "note": "Pharmacy-only procedure"
+  },
+  {
+    "id": "G9",
+    "q": "OTC card balance",
+    "role": "insurance",
+    "outcome": "none",
+    "note": "unsupported"
+  },
+  {
+    "id": "G10",
+    "q": "Rx pricing disclaimer",
+    "role": "pharmacy",
+    "outcome": "answer",
+    "unit": "KU-RX-013",
+    "doc": "DOC-PHOUT",
+    "sec": "S3",
+    "exact": {
+      "1": "Prices quoted today are estimates based on your plan and are subject to change. Your final cost is confirmed when the pharmacy processes your prescription."
+    },
+    "note": "published earlier, still served"
+  }
+]

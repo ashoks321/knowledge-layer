@@ -1,0 +1,21 @@
+question,asked_as,times_asked,tests
+can I refill early,Member chat,41,plain;needs the situation
+I evacuated can I refill my insulin early,Member chat,23,plain
+early refill hurricane,Pharmacy advocate,36,plain
+refill too soon override,Pharmacy advocate,19,jargon;needs the situation
+EM-14 code,Pharmacy advocate,8,acronym;needs the situation
+early refill hurricane,Insurance advocate,14,role-specific answer
+which counties are declared,Insurance advocate,12,plain
+lost my medication in the flood,Member chat,17,plain
+replace oxygen tank,Member chat,27,not in sources
+oxygen supplies hurricane,Insurance advocate,9,not in sources
+CPAP replacement storm,Member chat,6,acronym;not in sources
+which pharmacies are open,Member chat,22,not in sources
+pharmacy closed near me,Member chat,11,not in sources
+open pharmacy list,Pharmacy advocate,7,not in sources
+mail order delivery delayed,Member chat,13,not in sources
+where is my mail order package,Member chat,8,not in sources
+OTC card balance,Insurance advocate,11,acronym;not in sources
+how do I pay my premium,Member chat,9,plain
+claim status,Insurance advocate,15,plain
+Rx pricing disclamer,Pharmacy advocate,6,misspelling

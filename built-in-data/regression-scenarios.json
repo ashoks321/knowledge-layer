@@ -1,0 +1,34 @@
+[
+  {
+    "id": "R1",
+    "title": "Editing approved content withdraws it and needs reapproval"
+  },
+  {
+    "id": "R2",
+    "title": "Broadening an audience needs Robin's authorization"
+  },
+  {
+    "id": "R3",
+    "title": "An extension withholds what changed and never falls back to the standing rule"
+  },
+  {
+    "id": "R4",
+    "title": "An exception that still overlaps the standing rule blocks publication"
+  },
+  {
+    "id": "R5",
+    "title": "Exception and standing rule coexist; an unclear question gets a question back"
+  },
+  {
+    "id": "R6",
+    "title": "Unsupported questions that share words with a supported topic"
+  },
+  {
+    "id": "R7",
+    "title": "A published unit whose wording no longer matches its approval"
+  },
+  {
+    "id": "R8",
+    "title": "A gap draft is not an answer until evidence and approval"
+  }
+]
